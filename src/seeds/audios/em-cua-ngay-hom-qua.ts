@@ -1,7 +1,8 @@
-import { sonTungMPT } from '@seeds/users/son-tung-mtp/data';
-import { music } from '@seeds/categories/music/data';
 import * as path from 'path';
-import { createAudioKey } from '../utils';
+import { sonTungMPT } from '@seeds/users/son-tung-mtp';
+import { createAudioKey } from '@seeds/utils';
+import { filesDirectory } from '@seeds/constants';
+import { music } from '@seeds/categories/music';
 
 export const emCuaNgayHomQua = {
   id: '3597253b-d41a-4769-a251-35935c6f9b50',
@@ -24,10 +25,16 @@ export const emCuaNgayHomQua = {
 
 export const emCuaNgayHomQuaImagePath = path.join(
   __dirname,
+  filesDirectory,
+  'audios',
+  'images',
   'em-cua-ngay-hom-qua.jpg',
 );
 
 export const emCuaNgayHomQuaSoundPath = path.join(
   __dirname,
+  filesDirectory,
+  'audios',
+  'sounds',
   'em-cua-ngay-hom-qua.mp3',
 );

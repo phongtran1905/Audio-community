@@ -3,7 +3,8 @@ import { Role } from '@users/domain/value-object/role';
 import * as path from 'path';
 import * as bcrypt from 'bcrypt';
 import { ROUNDS } from '@constants/index';
-import { createUserAvatarKey } from '../utils';
+import { createUserAvatarKey } from '@seeds/utils';
+import { filesDirectory } from '@seeds/constants';
 
 export const sonTungMPT = {
   id: '6d7c0196-0992-4ce1-8885-0c6597583cdb',
@@ -30,4 +31,10 @@ export const sonTungMPTProfile = {
   updatedAt: new Date(),
 };
 
-export const sonTungMPTAvatarPath = path.join(__dirname, 'son-tung-mtp.jpg');
+export const sonTungMPTAvatarPath = path.join(
+  __dirname,
+  filesDirectory,
+  'users',
+  'avatars',
+  'son-tung-mtp.jpg',
+);

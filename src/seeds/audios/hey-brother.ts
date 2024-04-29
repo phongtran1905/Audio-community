@@ -1,7 +1,8 @@
-import { music } from '@seeds/categories/music/data';
 import * as path from 'path';
-import { avicii } from '@seeds/users/avicii/data';
-import { createAudioKey } from '../utils';
+import { filesDirectory } from '@seeds/constants';
+import { createAudioKey } from '@seeds/utils';
+import { avicii } from '@seeds/users/avicii';
+import { music } from '@seeds/categories/music';
 
 export const heyBrother = {
   id: '79fd5456-c978-48bb-9ee5-04a414019cb6',
@@ -22,6 +23,18 @@ export const heyBrother = {
   updatedAt: new Date(),
 };
 
-export const heyBrotherImagePath = path.join(__dirname, 'hey-brother.jpg');
+export const heyBrotherImagePath = path.join(
+  __dirname,
+  filesDirectory,
+  'audios',
+  'images',
+  'hey-brother.jpg',
+);
 
-export const heyBrotherSoundPath = path.join(__dirname, 'hey-brother.mp3');
+export const heyBrotherSoundPath = path.join(
+  __dirname,
+  filesDirectory,
+  'audios',
+  'sounds',
+  'hey-brother.mp3',
+);

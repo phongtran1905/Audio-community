@@ -3,7 +3,8 @@ import { Role } from '@users/domain/value-object/role';
 import * as path from 'path';
 import * as bcrypt from 'bcrypt';
 import { ROUNDS } from '@constants/index';
-import { createUserAvatarKey } from '../utils';
+import { createUserAvatarKey } from '@seeds/utils';
+import { filesDirectory } from '@seeds/constants';
 
 export const avicii = {
   id: 'e81be6d0-c675-47fb-aa4c-aa3aedbf24c5',
@@ -30,4 +31,10 @@ export const aviciiProfile = {
   updatedAt: new Date(),
 };
 
-export const aviciiAvatarPath = path.join(__dirname, 'avicii.jpg');
+export const aviciiAvatarPath = path.join(
+  __dirname,
+  filesDirectory,
+  'users',
+  'avatars',
+  'avicii.jpg',
+);

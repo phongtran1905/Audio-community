@@ -3,7 +3,8 @@ import { Role } from '@users/domain/value-object/role';
 import * as path from 'path';
 import * as bcrypt from 'bcrypt';
 import { ROUNDS } from '@constants/index';
-import { createUserAvatarKey } from '../utils';
+import { createUserAvatarKey } from '@seeds/utils';
+import { filesDirectory } from '@seeds/constants';
 
 export const tranPhong = {
   id: '1ac69a8e-977f-46a9-aa23-6d1e8f119567',
@@ -30,4 +31,10 @@ export const tranPhongProfile = {
   updatedAt: new Date(),
 };
 
-export const tranPhongAvatarPath = path.join(__dirname, 'tran-phong.png');
+export const tranPhongAvatarPath = path.join(
+  __dirname,
+  filesDirectory,
+  'users',
+  'avatars',
+  'tran-phong.png',
+);

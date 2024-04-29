@@ -3,7 +3,8 @@ import { Role } from '@users/domain/value-object/role';
 import * as bcrypt from 'bcrypt';
 import * as path from 'path';
 import { Gender } from '@users/domain/value-object/gender';
-import { createUserAvatarKey } from '../utils';
+import { filesDirectory } from '@seeds/constants';
+import { createUserAvatarKey } from '@seeds/utils';
 
 export const adminOne = {
   id: '5ba9265c-3e86-409e-8645-c6ec540c0601',
@@ -30,4 +31,10 @@ export const adminOneProfile = {
   updatedAt: new Date(),
 };
 
-export const adminOneAvatarPath = path.join(__dirname, 'admin-one.png');
+export const adminOneAvatarPath = path.join(
+  __dirname,
+  filesDirectory,
+  'users',
+  'avatars',
+  'admin-one.png',
+);

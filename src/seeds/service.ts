@@ -6,38 +6,38 @@ import {
   sonTungMPT,
   sonTungMPTAvatarPath,
   sonTungMPTProfile,
-} from './users/son-tung-mtp/data';
+} from './users/son-tung-mtp';
 import { RDBUser } from '@users/infrastucture/rdb-entity/user';
 import { RDBProfile } from '@users/infrastucture/rdb-entity/profile';
 import {
   adminOne,
   adminOneAvatarPath,
   adminOneProfile,
-} from './users/admin-one/data';
+} from './users/admin-one';
 import { RDBCategory } from '@categories/infrastructure/rdb-entity/category';
-import { music } from './categories/music/data';
+import { music } from './categories/music';
 import { RDBAudio } from '@audio/infrastructure/rdb-entity/audio';
 import {
   emCuaNgayHomQua,
   emCuaNgayHomQuaImagePath,
   emCuaNgayHomQuaSoundPath,
-} from './audios/em-cua-ngay-hom-qua/data';
-import { avicii, aviciiAvatarPath, aviciiProfile } from './users/avicii/data';
+} from './audios/em-cua-ngay-hom-qua';
+import { avicii, aviciiAvatarPath, aviciiProfile } from './users/avicii';
 import {
   waitingForLove,
   waitingForLoveImagePath,
   waitingForLoveSoundPath,
-} from './audios/waiting-for-love/data';
+} from './audios/waiting-for-love';
 import {
   heyBrother,
   heyBrotherImagePath,
   heyBrotherSoundPath,
-} from './audios/hey-brother/data';
+} from './audios/hey-brother';
 import {
   tranPhong,
   tranPhongAvatarPath,
   tranPhongProfile,
-} from './users/tran-phong/data';
+} from './users/tran-phong';
 
 @Injectable()
 export class SeedService {
