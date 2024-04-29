@@ -1,0 +1,6 @@
+/audio-community-data
+/audio-community-storage
+/dist
+Dockerfile
+docker-compose.yaml
+README.md
